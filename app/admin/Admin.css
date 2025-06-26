@@ -1,0 +1,102 @@
+/* Admin.css */
+.admin-page {
+  padding: 2rem;
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.welcome-subtext {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.stat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: #1e1e1e;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.table-section {
+  margin-top: 3rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1c1c1c;
+}
+
+.admin-table th, .admin-table td {
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.status-scheduled {
+  color: #00ff7f;
+}
+
+.status-pending {
+  color: #ffa500;
+}
+
+.status-cancelled {
+  color: #ff4c4c;
+}
+
+.btn {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.schedule {
+  background-color: #00b894;
+  color: white;
+}
+
+.cancel {
+  background-color: #d63031;
+  color: white;
+}

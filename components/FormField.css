@@ -1,0 +1,18 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* space between label, field, and message */
+  margin-bottom: 16px;
+}
+
+.form-label {
+  color: #ffffff;         /* White label */
+  font-size: 14px;        /* Equivalent to text-sm */
+  font-weight: 500;       /* Medium font weight */
+}
+
+.form-message {
+  color: #ef4444;         /* Red color for error message */
+  font-size: 14px;
+  margin-top: 4px;
+}

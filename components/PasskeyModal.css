@@ -1,0 +1,123 @@
+/* PasskeyModal.css */
+
+/* === MODAL BACKDROP === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* === MODAL CONTENT === */
+.modal-content {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.modal-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.modal-description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #cccccc;
+}
+
+/* === FOOTER BUTTONS === */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.modal-button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: #aaa;
+  border: 1px solid #555;
+}
+
+.continue-button {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.continue-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* === OTP STYLE === */
+.shad-otp {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.shad-otp-slot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.shad-otp-slot:focus {
+  border-color: #3b82f6;
+  background-color: #333;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%;
+    padding: 1.5rem 1rem;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modal-button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .shad-otp {
+    gap: 0.4rem;
+  }
+
+  .shad-otp-slot {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}

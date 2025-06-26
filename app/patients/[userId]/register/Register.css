@@ -1,0 +1,114 @@
+/* RegisterPage.css */
+
+/* ====== Layout container ====== */
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Left form section ====== */
+.form-section {
+  width: 50%;
+  background-color: #0d0d0d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* ====== Logo and header ====== */
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-container img {
+  max-width: 180px;
+  height: auto;
+}
+
+.section-header {
+  margin: 2rem 0 1rem;
+}
+
+.section-header h1,
+.section-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.section-header p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* ====== Form layout ====== */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Two-column row */
+.input-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.input-field {
+  flex: 1;
+}
+
+/* Checkbox / Radio styles */
+input[type='radio'],
+input[type='checkbox'] {
+  accent-color: #2563eb; /* Tailwind's blue-600 */
+}
+
+/* ====== Footer ====== */
+.form-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.form-footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+.form-footer a:hover {
+  color: #4f9cf9;
+}
+
+/* ====== Right image section ====== */
+.image-section {
+  width: 50%;
+  position: relative;
+}
+
+/* ====== Responsive stack layout for mobile ====== */
+@media screen and (max-width: 1024px) {
+  .split-container {
+    flex-direction: column;
+  }
+
+  .form-section,
+  .image-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+}

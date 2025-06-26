@@ -1,0 +1,133 @@
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.form-section {
+  width: 50%;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+form section,
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Label styling */
+form label,
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Error styling */
+.shad-error {
+  font-size: 0.8rem;
+  color: #f87171;
+  margin-top: 4px;
+}
+
+/* Custom field wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-wrapper:has(input:focus) {
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.5);
+}
+
+.input-wrapper img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.input-wrapper input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Submit Button */
+.form-box button {
+  padding: 12px 20px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(79, 70, 229, 0.3);
+}
+
+.form-box button:hover {
+  background-color: #4338ca;
+  box-shadow: 0 6px 12px rgba(67, 56, 202, 0.6);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #aaa;
+  width: 100%;
+  margin-top: auto;
+}
+
+.form-footer a {
+  color: #00ffae;
+  text-decoration: none;
+}
+
+.image-section {
+  width: 50%;
+  position: relative;
+}

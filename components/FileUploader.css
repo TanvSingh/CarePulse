@@ -1,0 +1,37 @@
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #4ade80; /* Tailwind's green-400 */
+  background-color: #080b0d; /* Tailwind's gray-50 */
+  color: #4b5563; /* Tailwind's gray-700 */
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  min-height: 250px;
+}
+
+.file-upload:hover {
+  background-color: #37413c; /* Tailwind's green-50 */
+  border-color: #22c55e; /* Tailwind's green-500 */
+}
+
+.file-upload_label {
+  margin-top: 1rem;
+}
+
+.text-14-regular {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-12-regular {
+  font-size: 12px;
+  color: #6b7280; /* Tailwind's gray-500 */
+}
