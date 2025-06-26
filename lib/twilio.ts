@@ -8,20 +8,24 @@ const client = twilio(
 const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID!;
 const toPhone = process.env.TWILIO_VERIFIED_NUMBER!;
 
-export const sendOTP = async () => {
+export const sendOTP = async (): Promise<number> => {
   const otp = Math.floor(100000 + Math.random() * 900000);
   const msg = `🔐 Your OTP for appointment confirmation is: ${otp}`;
 
   try {
     await client.messages.create({
       body: msg,
-      messagingServiceSid: messagingServiceSid, // ✅ fixed here
+      messagingServiceSid: messagingServiceSid,
       to: toPhone,
     });
 
     return otp;
-  } catch (error: any) {
-    console.error('❌ OTP Send Error:', error?.message || error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('❌ OTP Send Error:', error.message);
+    } else {
+      console.error('❌ OTP Send Error:', error);
+    }
     throw error;
   }
 };
